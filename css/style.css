@@ -13,7 +13,6 @@ body {
 
 main {
     width: 85%;
-
     padding: 30px 0 0 80px;
 
 }
@@ -26,6 +25,7 @@ main {
     background-color: #161616;
     height: 500px;
     border-radius: 15px;
+    margin-bottom: 30px;
 
 }
 
@@ -75,4 +75,49 @@ button a {
 .banner-img img {
     width: 410px;
     height: 480px;
+}
+
+/*-----------------------------
+    Style Blog Section
+------------------------------*/
+.blog-section {
+    width: auto;
+    height: 700px;
+
+}
+
+.blogs {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 200px repeat(3, 1fr);
+    gap: 5px;
+
+}
+
+.blog-side {
+    grid-row: 1/span 2;
+
+
+
+}
+
+.all-button {
+    background-color: black;
+    display: grid;
+    grid-template-rows: 75px 75px 75px;
+    height: 250px;
+    margin-right: 9px;
+}
+
+
+.blog {
+
+
+    height: 250px;
+
+}
+
+.blog-banner img {
+    width: 220px;
+    height: 105px;
 }
