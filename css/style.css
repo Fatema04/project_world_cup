@@ -50,20 +50,43 @@ main {
 }
 
 button {
+
+    background-color: crimson;
+    color: #fff;
     font-size: 20px;
-    padding: 8px 20px;
-    border-radius: 5px;
+    padding: 10px 20px;
     margin-top: 30px;
+    border-radius: 10px;
+    border: 1px solid #E8E8E8;
+}
+
+button a {
+    margin-left: 10px;
+    color: #fff;
+}
+
+
+
+#website-3 {
     background-color: crimson;
     color: #fff;
 
 
+
 }
 
-button a {
-    color: #fff;
-    padding-left: 20px;
-    font-size: 30px;
+
+
+
+.all-button a {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #fff;
+    color: #161616;
+    margin: 10px;
+    padding: 10px 0px 10px 5px;
     position: relative;
     top: 5px;
 }
@@ -77,6 +100,54 @@ button a {
 .banner-img img {
     width: 410px;
     height: 450px;
+}
+
+.animation {
+
+    position: relative;
+    display: flex;
+
+}
+
+
+.animation>span {
+
+    position: relative;
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    background-color: #fff;
+    right: 750px;
+    top: 420px;
+
+    margin: 10px 10px;
+
+    box-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 30px #03bcf4, 0 0 50px #03bcf4, 0 0 80px #03bcf4;
+    animation: animate 5s linear infinite;
+
+}
+
+
+
+@keyframes animate {
+    0% {
+        transform: translate(0px);
+    }
+
+
+    50% {
+        transform: translate(100px);
+    }
+
+    100% {
+        transform: translate(0px);
+
+    }
+
+
+
+
+
 }
 
 
@@ -111,7 +182,10 @@ button a {
     padding: 0px 10px;
     margin-right: 9px;
     border: 1px solid #c8c7c7;
-    border-radius: 10px;
+}
+
+.all-button a {
+    border-radius: 5px;
 }
 
 .link-1,
@@ -290,6 +364,7 @@ hr {
     main {
         width: 80%;
         margin-left: -40px;
+
     }
 
     .banner-section {
@@ -365,8 +440,12 @@ hr {
 
     .all-button {
         background-color: #fff;
-        padding-right: 60px;
+        padding-left: 20px;
 
+    }
+
+    .animation {
+        display: none;
     }
 
     .link-1,
@@ -422,9 +501,7 @@ hr {
         height: 100%;
     }
 
-    footer {
-        display: none;
-    }
+
 
     .blogs {
 
@@ -445,14 +522,17 @@ hr {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         flex-direction: row;
-        padding: 20px 0 20px 5px;
+        padding: 10px;
         font-size: 30px;
         background-color: #fff;
         border: none;
         margin-top: -30px;
+    }
 
-
+    .all-button a {
+        padding: 10px 40px;
     }
 
     .link-1,
@@ -477,6 +557,13 @@ hr {
         width: 100%;
     }
 
+    .animation {
+        position: absolute;
+        top: 30px;
+        right: -290px;
+
+    }
+
     .hidden-button {
         display: flex;
         position: relative;
@@ -485,4 +572,21 @@ hr {
         margin-bottom: 30px;
 
     }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .social-site {
+
+        margin: 30px 0 30px 320px;
+    }
+
+    .social-site i {
+        padding: 10px;
+    }
+
 }
