@@ -8,7 +8,6 @@
 }
 
 body {
-
     font-family: 'Poppins', sans-serif;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -16,12 +15,9 @@ body {
 main {
     width: 85%;
     padding: 30px 0 0 80px;
-
 }
 
-/*-----------------------------
-    Style Banner Section
-------------------------------*/
+/*--------------------Style Banner Section -------------------*/
 .banner-section {
     display: flex;
     background-color: #161616;
@@ -66,13 +62,9 @@ button a {
 }
 
 
-
 #website-3 {
     background-color: crimson;
     color: #fff;
-
-
-
 }
 
 
@@ -102,11 +94,12 @@ button a {
     height: 450px;
 }
 
+/*-------------------Animation-----------------------*/
+
 .animation {
 
     position: relative;
     display: flex;
-
 }
 
 
@@ -119,21 +112,16 @@ button a {
     background-color: #fff;
     right: 750px;
     top: 420px;
-
     margin: 10px 10px;
-
     box-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 30px #03bcf4, 0 0 50px #03bcf4, 0 0 80px #03bcf4;
     animation: animate 5s linear infinite;
 
 }
 
-
-
 @keyframes animate {
     0% {
         transform: translate(0px);
     }
-
 
     50% {
         transform: translate(100px);
@@ -143,18 +131,12 @@ button a {
         transform: translate(0px);
 
     }
-
-
-
-
-
 }
 
 
 
-/*-----------------------------
-    Style Blog Section
-------------------------------*/
+/*-----------------------Style Blog Section-----------------*/
+
 .blog-section {
     width: auto;
     height: 600px;
@@ -162,16 +144,13 @@ button a {
 }
 
 .blogs {
-
     display: grid;
     grid-template-columns: 200px repeat(3, 1fr);
     gap: 5px;
-
 }
 
 .blog-side {
     grid-row: 1/span 2;
-
 }
 
 .all-button {
@@ -202,7 +181,6 @@ button a {
     background-color: crimson;
     color: #fff;
 }
-
 
 .blog,
 .match {
@@ -250,54 +228,14 @@ span {
     font-size: 15px;
     font-weight: 500;
     color: rgba(22, 22, 22, 0.7);
-
 }
 
-/*-------------------- Up Coming Match(Website-1) Start-----------------*/
-#link-1 {
-    background-color: crimson;
-    color: #fff;
-
-}
-
-#match-section {
-    height: 400px;
-
-}
-
-#match {
-    height: 180px;
-}
-
-.match-between {
-
-    display: flex;
-}
-
-.match img {
-    padding: 30px 5px 0 5px;
-    width: 70px;
-}
-
-.vs {
-    padding-top: 28%;
-    font-weight: 700;
-    color: #161616;
-}
-
-.match-info {
-    color: #161616;
-    text-align: center;
-    margin-top: 10px;
-}
-
-/*-------------------- Up Coming Match(Website-1) End-----------------*/
 
 .hidden-button {
     display: none;
 }
 
-/*------------------------Footer ----------------*/
+/*------------------------Footer Style ----------------*/
 footer {
     margin-top: 60px;
     background-color:
@@ -354,11 +292,50 @@ hr {
 
 }
 
-/*----------------------------- Media Quaries----------------------*/
+/*----------Up Coming Match(match.html) Style-----------------*/
+#link-1 {
+    background-color: crimson;
+    color: #fff;
 
-/*----------------------------- 
-        Mobile Devices
------------------------------*/
+}
+
+#match-section {
+    height: 400px;
+
+}
+
+#match {
+    height: 180px;
+}
+
+.match-between {
+
+    display: flex;
+}
+
+.match img {
+    padding: 30px 5px 0 5px;
+    width: 70px;
+}
+
+.vs {
+    padding-top: 28%;
+    font-weight: 700;
+    color: #161616;
+}
+
+.match-info {
+    color: #161616;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*----------- Up Coming Match(match.html) End----------*/
+
+
+/*------------------------ Media Quaries----------------------*/
+
+/*------------------------ Mobile Devices--------------------*/
 
 @media screen and (max-width:688px) {
     main {
@@ -405,9 +382,6 @@ hr {
         margin-left: 40px;
     }
 
-
-
-
     .banner-img img {
         width: 280px;
         position: relative;
@@ -420,7 +394,6 @@ hr {
         height: 100%;
 
     }
-
 
     .blogs {
         display: grid;
@@ -436,10 +409,6 @@ hr {
         height: 150px;
     }
 
-    .match {
-        width: 100%;
-    }
-
 
 
     .all-button {
@@ -452,8 +421,6 @@ hr {
 
         padding: 10px 90px;
     }
-
-
 
     .animation {
         display: none;
@@ -487,178 +454,174 @@ hr {
     .social-site i {
         padding: 10px;
     }
-}
-
-/*----------------------------- 
-        Ipad
------------------------------*/
-
-@media only screen and (min-width:688px) and (max-width:992px) {
 
 
+    /*-------------------------- Ipad Devises--------------------*/
 
-    .banner-paragraph {
-        width: 150px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+    @media only screen and (min-width:688px) and (max-width:992px) {
 
-    .banner-img img {
-        width: 350px;
-    }
+        .banner-paragraph {
+            width: 150px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
 
-    .blog-section {
-        height: 100%;
-    }
+        .banner-img img {
+            width: 350px;
+        }
 
+        .blog-section {
+            height: 100%;
+        }
 
+        .blogs {
 
-    .blogs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
 
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        }
 
+        .blog-side {
+            grid-column: 1/span 2;
 
-    }
+        }
 
+        .all-button {
+            height: 50px;
+            width: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-    .blog-side {
-        grid-column: 1/span 2;
+            flex-direction: row;
+            padding: 10px;
+            font-size: 30px;
+            background-color: #fff;
+            border: none;
+            margin-top: -30px;
+        }
 
-    }
+        .all-button a {
+            margin-right: 10px;
+            padding: 10px 40px;
+        }
 
-    .all-button {
-        height: 50px;
-        width: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        flex-direction: row;
-        padding: 10px;
-        font-size: 30px;
-        background-color: #fff;
-        border: none;
-        margin-top: -30px;
-    }
-
-    .all-button a {
-        margin-right: 10px;
-        padding: 10px 40px;
-    }
-
-    .link-1,
-    .link-2,
-    .link-3 {
-        border: 1px solid #E8E8E8;
-        padding: 10px 50px;
-    }
+        .link-1,
+        .link-2,
+        .link-3 {
+            border: 1px solid #E8E8E8;
+            padding: 10px 50px;
+        }
 
 
 
-    .link-3 {
-        color: #fff;
-        background-color: crimson;
-    }
+        .link-3 {
+            color: #fff;
+            background-color: crimson;
+        }
 
-    .blog {
-        width: 300px;
-    }
+        .blog {
+            width: 300px;
+        }
 
-    .blog-banner img {
-        width: 100%;
-    }
+        .blog-banner img {
+            width: 100%;
+        }
 
-    .animation {
-        position: absolute;
-        top: 30px;
-        right: -290px;
+        .animation {
+            position: absolute;
+            top: 30px;
+            right: -290px;
 
-    }
+        }
 
-    .hidden-button {
-        display: flex;
-        position: relative;
-        left: 40%;
-        border: 1px solid #E8E8E8;
-        margin-bottom: 30px;
+        .hidden-button {
+            display: flex;
+            position: relative;
+            left: 40%;
+            border: 1px solid #E8E8E8;
+            margin-bottom: 30px;
 
-    }
+        }
 
-    footer {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        width: 100%;
-    }
+        footer {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+        }
 
-    .social-site {
+        .social-site {
 
-        margin: 30px 0 30px 320px;
-    }
+            margin: 30px 0 30px 320px;
+        }
 
-    .social-site i {
-        padding: 10px;
-    }
-
-}
-
-@media screen and (max-width:688px) {
-    #match-section {
-        height: 100%;
-        width: 100%;
-
+        .social-site i {
+            padding: 10px;
+        }
 
     }
 
-    #match {
-        height: 220px;
-        width: 300px;
+    /*--------------End of IPad Devices Style---------------*/
+
+
+
+
+    /*------------Mobile Devices Style(match.html)---------------*/
+
+
+    @media screen and (max-width:688px) {
+        #match-section {
+            height: 100%;
+            width: 100%;
+        }
+
+        #match {
+            height: 220px;
+            width: 300px;
+        }
+
+        .match-between img {
+            padding-left: 20px;
+            width: 100px;
+        }
+
+        .all-button {
+            background-color: #fff;
+        }
+
+
+        .all-button a {
+            margin-right: 30px;
+            padding: 10px 20px;
+        }
+
+        footer {
+            height: 100%;
+            width: 100%;
+        }
     }
 
-    .match-between img {
-        padding-left: 20px;
-        width: 100px;
-    }
-
-    .all-button {
-        background-color: #fff;
+    /*--------IPad Devices Style(match.html)-------------------*/
 
 
-    }
+    @media only screen and (min-width:688px) and (max-width:992px) {
+        #match-section {
+            height: 100%;
+            width: 100%;
+        }
 
+        #match img {
+            padding-left: 20px;
+            width: 100px;
+        }
 
-    .all-button a {
-        margin-right: 30px;
-        padding: 10px 20px;
-    }
-
-
-    footer {
-        height: 100%;
-        width: 100%;
-    }
-}
-
-/*--------match ipad*/
-
-
-@media only screen and (min-width:688px) and (max-width:992px) {
-    #match-section {
-        height: 100%;
-        width: 100%;
-    }
-
-    #match img {
-        padding-left: 20px;
-        width: 100px;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        width: 100%;
+        footer {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+        }
     }
 }
